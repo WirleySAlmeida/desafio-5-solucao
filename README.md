@@ -12,5 +12,7 @@ oc set build-hook bc/post --post-commit --script="python3 /opt/email.py"
 Ver os logs:
 oc logs -f bc/post
 
+oc start-build bc/post
+
 Você vai ver o trecho no log:
 Send e-mail
